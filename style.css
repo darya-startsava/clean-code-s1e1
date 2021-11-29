@@ -22,12 +22,13 @@ body {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.article {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.section__input_task,
+.section__label_task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -120,12 +121,12 @@ li > label {
 li >  input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.section__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.section__button_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -140,11 +141,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul .section__li_edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul .section__li_edit-mode label {
   display: none;
 }
